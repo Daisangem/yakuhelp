@@ -1,0 +1,42 @@
+
+# Client (Vite / pnpm)
+client/node_modules/
+client/dist/
+client/.vite/
+client/coverage/
+
+# Environment files
+client/.env
+client/.env.*
+!client/.env.example
+
+# Server (.NET / Razor)
+servers/**/bin/
+servers/**/obj/
+servers/**/out/
+
+# Visual Studio / Rider
+servers/.vs/
+servers/.idea/
+servers/**/*.user
+servers/**/*.suo
+
+# .NET generated files
+servers/**/*.cache
+servers/**/*.log
+
+# NuGet
+servers/**/packages/
+servers/**/*.nupkg
+
+# Environment / secrets
+servers/**/appsettings.Development.json
+servers/**/secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
