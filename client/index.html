@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yakuhelper Demo</title>
+  </head>
+
+  <body class="min-h-full bg-casino text-ivory">
+      <header>
+          <div>
+              <h1 class="m-3 text-3xl fond-bold color-[#F0E9D8]">Yakuhelper</h1>
+          </div>
+      </header>
+    <main class="mx-auto max-w-6xl px-6 py-16">
+      <h1 class="text-3xl font-bold tracking-tight">
+          役helper
+      </h1>
+
+      <p class="mt-2 text-gray-600">
+          麻雀 helper!
+      </p>
+
+      <section class="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+          <h2 class="text-lg font-semibold">
+              役牌を読み込む
+          </h2>
+
+          <p class="mt-2 text-sm text-gray-500">
+              役牌一覧を表示
+          </p>
+
+          <button
+         id="load-hand"
+          class="mt-5 rounded-lg px-4 py-2 font-medium text-white transition bg-vintage-blue"
+        >
+         HAND
+        </button>
+<button
+    id="load-wall"
+    class="mt-5 rounded-lg  px-4 py-2 font-medium text-white transition bg-vintage-red"
+>
+    牌山を生成
+</button>
+        <div
+          id="content"
+          class="mt-6 rounded-lg border border-dashed border-gray-300 p-5"
+        >
+            <p class="text-sm text-gray-400">
+                手牌が空です
+            </p>
+        </div>
+        <div
+          id="content-hand"
+          class="mt-6 rounded-lg border border-dashed border-gray-300 p-5"
+        >
+            <p class="text-sm text-gray-400">
+                h a n d
+            </p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
