@@ -1,4 +1,3 @@
-
 # Yakuhelp
 
 A Riichi Mahjong project focused on making it easier to understand and work with Japanese Mahjong.
