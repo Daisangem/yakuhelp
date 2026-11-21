@@ -4,7 +4,7 @@ export function createWall(): tileType.Tile[]{
     const wall: tileType.Tile[] = [];
 
     const suits: tileType.Shupai[] = ["Man", "Pin", "Sou"];
-    const jihais: tileType.Jihai[] = ["Ton", "Nan", "Sha", "Pei", "Haku", "Hatsu", "Chu"];
+    const jihais: tileType.Jihai[] = ["Ton", "Nan", "Shaa", "Pei", "Haku", "Hatsu", "Chun"];
 
     let id = 0;
     for (const suit of suits){

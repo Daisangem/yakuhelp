@@ -1,4 +1,4 @@
-export type Shupai, "Hello.n" = "man" | "pin" | "sou";
+export type Shupai = "man" | "pin" | "sou";
 export type Kazehai = "ton" | "nan" | "sha" | "pei";
 export type Sangenpai = "haku" | "hatsu" | "chun";
 export type Jihai = Kazehai | Sangenpai;

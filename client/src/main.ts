@@ -2,16 +2,14 @@ import 'htmx.org'
 import './style.css'
 
 import {createWall} from './mahjong/wall.ts'
-
-console.log("Yakuhelper!");
-const tiles: Tile[] = [
-    { id: "1m", suit: "man", value: 1 },
-    { id: "2m", suit: "man", value: 2 },
-    { id: "5p", suit: "pin", value: 5 },
-    { id: "0p", suit: "pin", value: 5, red: true },
-    { id: "1z", suit: "honor", value: 1 }
-];
-
-console.log(tiles[3]);
+import {renderWall} from '../views/wall.ts'
 
 let mywall = createWall();
+
+const button = document.querySelector<HTMLButtonElement>("#load-wall");
+const content = document.querySelector<HTMLDivElement>("#content");
+
+button?.addEventListener("click", async () => {
+    const wall = createWall();
+    content!.innerHTML = await renderWall(wall);
+});
