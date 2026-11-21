@@ -1,5 +1,3 @@
-
-
 export type Shupai = "man" | "pin" | "sou";
 export type Kazehai = "ton" | "nan" | "sha" | "pei";
 export type Sangenpai = "haku" | "hatsu" | "chun";
