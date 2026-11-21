@@ -1,24 +1,13 @@
+
 # Yakuhelp
 
-A Riichi Mahjong project focused on making it easier to understand and work with Japanese Mahjong.
+A Riichi Mahjong project focused on Japanese Mahjong.
 
-## Prerequisites
-
-Make sure you have the following installed:
+## Requirements
 
 - [.NET SDK](https://dotnet.microsoft.com/download)
-- [Node.js (LTS)](https://nodejs.org/)
-- [pnpm](https://pnpm.io/installation)
-- [Git](https://git-scm.com/)
-
-You can verify your installations:
-
-```bash
-dotnet --version
-node --version
-npm --version
-pnpm --version
-```
+- [Node.js](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
 
 ## Installation
 
@@ -29,25 +18,21 @@ git clone git@github.com:Daisangem/yakuhelp.git
 cd yakuhelp
 ```
 
-### Frontend
-
-Navigate to the client directory and install dependencies:
+Install frontend dependencies:
 
 ```bash
 cd client
 pnpm install
 ```
 
-### Backend
-
-Navigate to the server directory and restore .NET dependencies:
+Restore backend dependencies:
 
 ```bash
-cd server
+cd ../server
 dotnet restore
 ```
 
-## Running locally
+## Running
 
 Start the backend:
 
@@ -63,32 +48,32 @@ cd client
 pnpm dev
 ```
 
-Vite will display the local development URL in your terminal.
-
 ## Building
 
-Build the frontend:
+Frontend:
 
 ```bash
 cd client
 pnpm build
 ```
 
-Build the backend:
+Backend:
 
 ```bash
 cd server
 dotnet build
 ```
 
-## Project Structure
+## Third-party assets and software
 
-```text
-yakuhelp/
-├── client/    # Frontend application built with Vite
-├── server/    # .NET backend
-└── README.md
-```
+### Riichi Mahjong Tiles
+
+- Repository: https://github.com/fluffystuff/riichi-mahjong-tiles
+- Author: FluffyStuff
+- Usage: Mahjong tile graphics
+- License: Public Domain
+
+The tile graphics used in Yakuhelp originate from this project.
 
 ## Status
 
