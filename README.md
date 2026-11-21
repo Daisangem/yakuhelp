@@ -1,101 +1,96 @@
-Yakuhelp
+
+# Yakuhelp
 
 A Riichi Mahjong project focused on making it easier to understand and work with Japanese Mahjong.
 
-Project Structure
-client/ – Frontend application.
-server/ – Backend application.
-Development
-
-Clone the repository:
-
-bash
-git clone git@github.com:Daisangem/yakuhelp.git
-cd yakuhelp
-
-
-Install dependencies and follow the setup instructions in the respective client/ and server/ directories.
-
-Status
-
-Work in progress.
-
-Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
-.NET SDK
-Node.js (LTS)
-pnpm
-Git
+- [.NET SDK](https://dotnet.microsoft.com/download)
+- [Node.js (LTS)](https://nodejs.org/)
+- [pnpm](https://pnpm.io/installation)
+- [Git](https://git-scm.com/)
 
 You can verify your installations:
 
-bash
+```bash
 dotnet --version
 node --version
 npm --version
 pnpm --version
+```
 
-Installation
+## Installation
 
 Clone the repository:
 
-bash
+```bash
 git clone git@github.com:Daisangem/yakuhelp.git
 cd yakuhelp
+```
 
-Frontend
+### Frontend
 
 Navigate to the client directory and install dependencies:
 
-bash
+```bash
 cd client
 pnpm install
+```
 
-Backend
+### Backend
 
 Navigate to the server directory and restore .NET dependencies:
 
-bash
-cd ../server
+```bash
+cd server
 dotnet restore
+```
 
-Running locally
+## Running locally
 
 Start the backend:
 
-bash
+```bash
 cd server
 dotnet run
-
+```
 
 Start the frontend in a separate terminal:
 
-bash
+```bash
 cd client
 pnpm dev
-
+```
 
 Vite will display the local development URL in your terminal.
 
-Building
+## Building
 
 Build the frontend:
 
-bash
+```bash
 cd client
 pnpm build
-
+```
 
 Build the backend:
 
-bash
+```bash
 cd server
 dotnet build
+```
 
-Project Structure
-client/ – Frontend application built with Vite.
-server/ – .NET backend.
-Status
+## Project Structure
 
+```text
+yakuhelp/
+├── client/    # Frontend application built with Vite
+├── server/    # .NET backend
+└── README.md
+```
+
+## Status
+
+Work in progress.
