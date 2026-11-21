@@ -6,8 +6,13 @@
     <title>Yakuhelper Demo</title>
   </head>
 
-  <body class="min-h-screen bg-gray-100 text-gray-900">
-    <main class="mx-auto max-w-3xl px-6 py-16">
+  <body class="min-h-full bg-casino text-ivory">
+      <header>
+          <div>
+              <h1 class="m-3 text-3xl fond-bold color-[#F0E9D8]">Yakuhelper</h1>
+          </div>
+      </header>
+    <main class="mx-auto max-w-6xl px-6 py-16">
       <h1 class="text-3xl font-bold tracking-tight">
           役helper
       </h1>
@@ -25,17 +30,15 @@
               役牌一覧を表示
           </p>
 
-        <button
-          hx-get="/fragments/tile.html"
-          hx-target="#content"
-          hx-swap="innerHTML"
-          class="mt-5 rounded-lg bg-blue-700 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
+          <button
+         id="load-hand"
+          class="mt-5 rounded-lg px-4 py-2 font-medium text-white transition bg-vintage-blue"
         >
-          手牌を読み込む
+         HAND
         </button>
 <button
     id="load-wall"
-    class="mt-5 rounded-lg bg-red-800 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
+    class="mt-5 rounded-lg  px-4 py-2 font-medium text-white transition bg-vintage-red"
 >
     牌山を生成
 </button>
@@ -45,6 +48,14 @@
         >
             <p class="text-sm text-gray-400">
                 手牌が空です
+            </p>
+        </div>
+        <div
+          id="content-hand"
+          class="mt-6 rounded-lg border border-dashed border-gray-300 p-5"
+        >
+            <p class="text-sm text-gray-400">
+                h a n d
             </p>
         </div>
       </section>
