@@ -1,4 +1,3 @@
-
 import type * as TileTypes from "./Tile.ts";
 
 export class TileGenerator {
@@ -58,4 +57,5 @@ export class TileGenerator {
             }
         }
     }
+
 }
