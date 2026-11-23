@@ -10,7 +10,7 @@ const button = document.querySelector<HTMLButtonElement>("#load-wall");
 const buttonHand = document.querySelector<HTMLButtonElement>("#load-hand");
 button?.addEventListener("click", async () => {
     const tiles = generator.generate();
-    TileActions.randomizeFY(tiles, 1);
+    TileActions.randomizeFY(tiles, true);
     content!.innerHTML = await renderWall(tiles);
 });
 
