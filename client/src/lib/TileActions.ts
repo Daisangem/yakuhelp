@@ -10,14 +10,18 @@ export class TileActions{
     };
 
     // Fisher-Yates - Random permutation of array elements.
-    static randomizeFY(xar: number[]): void{
+    static randomizeFY(xar: number[], debug = false): Array{
         const n = xar.length - 1;
-        console.log(n);
         for (let i=n; i>=0; i--){
            let j = Math.floor(Math.random() * (i + 1));
            [xar[i], xar[j]] = [xar[j], xar[i]];
-            console.log(`Switching array elemets: ${i} and ${j}`);
+            if(debug){
+                console.log(`Switching array elemets: ${i} and ${j}`);
+            }
        }
-        console.table(xar);
+        if(debug){
+            console.table(xar);
+        }
+        return xar;
     }
 }

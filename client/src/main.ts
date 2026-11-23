@@ -10,14 +10,7 @@ const button = document.querySelector<HTMLButtonElement>("#load-wall");
 const buttonHand = document.querySelector<HTMLButtonElement>("#load-hand");
 button?.addEventListener("click", async () => {
     const tiles = generator.generate();
-    TileActions.randomize(tiles);
+    TileActions.randomizeFY(tiles, 1);
     content!.innerHTML = await renderWall(tiles);
 });
 
-
-
-let nums: number[] = [1,6, 5,9, 4 ,3];
-let nums2: number[] = [1,2,3,4,5,6,7,8,9,10,11,12];
-TileActions.randomize(nums);
-
-TileActions.randomizeFY(nums2);
