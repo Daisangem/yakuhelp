@@ -12,10 +12,15 @@
               <div class="text-3xl p-3 font-bold color-ivory font-cormorant"
               id="Header-Title">Yakuhelper</div>
           <ul class="ml-auto flex items-center gap-6 p-3">
-              <li><a href="#" class="hover:text-blue-400">About</a></li>
-              <li><a href="#" class="hover:text-blue-400">Tiles</a></li>
-              <li><a href="#" class="hover:text-blue-400">Yaku List</a></li>
-              <li><a href="#" class="hover:text-blue-400">Practice</a></li>
+              <li><a hx-get="./partials/yaku.html"
+                     hx-target="#main-section"
+                     hx-push-url="/yaku"
+                     class="hover:text-blue-400">Yaku List</a></li>
+              <li><a hx-get="./partials/practice.html"
+                     hx-target="#main-section"
+                     hx-push-url="/practice"
+                     class="hover:text-blue-400">Practice</a></li>
+              <li><a href="#" class="hover:text-blue-400">News</a></li>
           </ul>
 
           </nav>
@@ -26,13 +31,14 @@
           役helper
       </h1>
 
-      <section class="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section class="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+      id="main-section">
           <h2 class="text-lg font-semibold text-charcoal">
-              役牌を読み込む
+              Welcome to Yakuhelper
           </h2>
 
           <p class="mt-2 text-sm text-gray-500">
-              役牌一覧を表示
+              Dummy-text for now! Click below to generate a Hand of tiles, or all Yaku tiles.
           </p>
 
           <button
@@ -45,7 +51,7 @@
     id="load-wall"
     class="mt-5 rounded-lg  px-4 py-2 font-medium text-white transition bg-vintage-red"
 >
-    牌山を生成
+            WALL
 </button>
         <div
           id="content"
