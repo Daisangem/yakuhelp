@@ -2,7 +2,7 @@ import 'htmx.org'
 import './style.css'
 import {TileGenerator} from "./lib/TileGenerator.ts"
 import {TileActions} from "./lib/TileActions.ts"
-import {renderWall} from '../views/wall.ts'
+import {renderWall} from './views/wall.ts'
 
 const generator = new TileGenerator();
 
