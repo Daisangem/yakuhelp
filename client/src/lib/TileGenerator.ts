@@ -12,7 +12,7 @@ export class TileGenerator {
 
     private id = 0;
 
-    private readonly BrightTiles = "/assets/mahjong-tiles/Regular/";
+    private readonly BrightTiles = "/static/assets/mahjong-tiles/Regular/";
     //private readonly DarkTiles = "/assets/mahjong-tiles/Black/";
 
     public generate(): TileTypes.Tile[] {
