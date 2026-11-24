@@ -7,7 +7,8 @@ import {renderWall} from './views/wall.ts'
 const generator = new TileGenerator();
 
 const button = document.querySelector<HTMLButtonElement>("#load-wall");
-const buttonHand = document.querySelector<HTMLButtonElement>("#load-hand");
+const content = document.querySelector<HTMLElement>("#content")
+//const buttonHand = document.querySelector<HTMLButtonElement>("#load-hand");
 button?.addEventListener("click", async () => {
     const tiles = generator.generate();
     TileActions.shuffle(tiles, true);

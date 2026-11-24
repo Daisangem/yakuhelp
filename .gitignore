@@ -1,4 +1,4 @@
-
+gitignore
 # Client (Vite / pnpm)
 client/node_modules/
 client/dist/
@@ -11,27 +11,28 @@ client/.env.*
 !client/.env.example
 
 # Server (.NET / Razor)
-servers/**/bin/
-servers/**/obj/
-servers/**/out/
+server/bin/
+server/obj/
+server/out/
 
 # Visual Studio / Rider
-servers/.vs/
-servers/.idea/
-servers/**/*.user
-servers/**/*.suo
+server/.vs/
+server/.idea/
+server/**/*.user
+server/**/*.suo
 
 # .NET generated files
-servers/**/*.cache
-servers/**/*.log
+server/**/*.cache
+server/**/*.log
+server/**/packages/
+server/**/*.nupkg
 
-# NuGet
-servers/**/packages/
-servers/**/*.nupkg
+# Web root (only if entirely generated)
+wwwroot/
 
 # Environment / secrets
-servers/**/appsettings.Development.json
-servers/**/secrets.json
+server/**/appsettings.Development.json
+server/**/secrets.json
 
 # OS files
 .DS_Store
@@ -39,4 +40,3 @@ Thumbs.db
 
 # Editor
 .vscode/
-

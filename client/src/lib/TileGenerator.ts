@@ -2,18 +2,18 @@ import type * as TileTypes from "./Tile.ts";
 
 export class TileGenerator {
     private static readonly SUITS: TileTypes.Shupai[] = [
-        "Man", "Pin", "Sou"
+        "man", "pin", "sou"
     ];
 
     private static readonly JIHAIS: TileTypes.Jihai[] = [
-        "Ton", "Nan", "Shaa", "Pei",
-        "Haku", "Hatsu", "Chun"
+        "ton", "nan", "sha", "pei",
+        "haku", "hatsu", "chun"
     ];
 
     private id = 0;
 
     private readonly BrightTiles = "/assets/mahjong-tiles/Regular/";
-    private readonly DarkTiles = "/assets/mahjong-tiles/Black/";
+    //private readonly DarkTiles = "/assets/mahjong-tiles/Black/";
 
     public generate(): TileTypes.Tile[] {
         this.id = 0;
@@ -37,7 +37,7 @@ export class TileGenerator {
                         suit,
                         value,
                         red: value === 5 && copy === 0,
-                        image: `${this.BrightTiles}${suit}${value}.svg`
+                        img: `${this.BrightTiles}${suit}${value}.svg`
                     });
                 }
             }
@@ -52,7 +52,7 @@ export class TileGenerator {
                     type: "jihai",
                     notation: `${index + 1}z`,
                     value: jihai,
-                    image: `${this.BrightTiles}${jihai}.svg`
+                    img: `${this.BrightTiles}${jihai}.svg`
                 });
             }
         }

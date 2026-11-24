@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace server.Pages;
 
-public class IndexModel : PageModel
+public class YakuModel : PageModel
 {
     public void OnGet()
     {
