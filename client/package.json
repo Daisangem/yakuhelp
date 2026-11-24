@@ -1,14 +1,15 @@
+
 {
   "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k --kill-signal SIGINT -n CLIENT,SERVER -c blue,green \"vite\" \"dotnet run --project ../server\"",
+    "dev": "concurrently -k --kill-signal SIGINT -n CLIENT,SERVER -c blue,green \"npm run dev:client\" \"npm run dev:server\"",
     "dev:client": "vite",
-    "build": "tsc && vite build && dotnet build ../server",
+    "dev:server": "cd ../server && uv run uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "build": "npm run build:client",
     "build:client": "tsc && vite build",
-    "build:server": "dotnet build ../server",
     "preview": "vite preview"
   },
   "devDependencies": {

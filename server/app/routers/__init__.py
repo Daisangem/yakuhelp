@@ -1,0 +1,3 @@
+"""
+Yakuhelper FastAPI application package.
+"""
