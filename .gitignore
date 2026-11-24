@@ -1,18 +1,14 @@
-gitignore
-# Client (Vite / pnpm)
+# Client
 client/node_modules/
 client/dist/
 client/.vite/
 client/coverage/
-
-# Environment files
 client/.env
 client/.env.*
 !client/.env.example
 
-# Server (.NET / Razor)
-server/bin/**
-server/bin/Debug/net11.0
+# Server
+server/bin/
 server/obj/
 server/out/
 server/wwwroot/
@@ -23,18 +19,17 @@ server/.idea/
 server/**/*.user
 server/**/*.suo
 
-# .NET generated files
+# .NET generated
 server/**/*.cache
 server/**/*.log
 server/**/packages/
 server/**/*.nupkg
 
-
-# Environment / secrets
+# Secrets
 server/**/appsettings.Development.json
 server/**/secrets.json
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
