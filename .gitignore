@@ -12,6 +12,7 @@ client/.env.*
 
 # Server (.NET / Razor)
 server/bin/**
+server/bin/Debug/net11.0
 server/obj/
 server/out/
 server/wwwroot/
