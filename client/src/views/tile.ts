@@ -1,4 +1,4 @@
-import type { Tile } from "../src/mahjong/types.ts"
+import type { Tile } from "../lib/Tile.ts"
 
 export function renderTile(tile: Tile): string {
     return `
@@ -7,7 +7,7 @@ export function renderTile(tile: Tile): string {
         border-8 border-double hover:border-blue-500 active:border-blue-500
         id='${tile.id}'">
             <img
-                src="${tile.image}"
+                src="${tile.img}"
                 alt="${tile.notation}"
                 class="w-full h-full"
             >

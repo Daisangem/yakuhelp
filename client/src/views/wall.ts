@@ -1,4 +1,4 @@
-import type { Tile } from "../../mahjong/types";
+import type { Tile } from "../lib/Tile.ts";
 import { renderTile } from "./tile";
 
 export function renderWall(tiles: Tile[]): string {
