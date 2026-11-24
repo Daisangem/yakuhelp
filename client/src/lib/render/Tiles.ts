@@ -11,6 +11,4 @@ export class Tiles{
             >
         </div>
     `;}
-
-
 }

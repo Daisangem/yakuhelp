@@ -15,5 +15,4 @@ export class TileActions{
         }
         return arr;
     }
-
 }
