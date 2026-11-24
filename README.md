@@ -34,18 +34,18 @@ dotnet restore
 
 ## Running
 
-Start the backend:
-
-```bash
-cd server
-dotnet run
-```
-
-Start the frontend in a separate terminal:
+Start the frontend and backend together (the backend uses `dotnet watch` for hot reload):
 
 ```bash
 cd client
 pnpm dev
+```
+
+To run only the backend with hot reload:
+
+```bash
+cd server
+dotnet watch run
 ```
 
 ## Building

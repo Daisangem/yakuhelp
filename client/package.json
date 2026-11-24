@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k --kill-signal SIGINT -n CLIENT,SERVER -c blue,green \"vite\" \"dotnet run --project ../server\"",
+    "dev": "concurrently -k --kill-signal SIGINT -n CLIENT,SERVER -c blue,green \"vite\" \"dotnet watch --project ../server run\"",
     "dev:client": "vite",
     "build": "tsc && vite build && dotnet build ../server",
     "build:client": "tsc && vite build",
