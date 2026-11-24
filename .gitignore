@@ -1,4 +1,5 @@
-# Client
+
+# Client (Vite / TypeScript)
 client/node_modules/
 client/dist/
 client/.vite/
@@ -7,31 +8,44 @@ client/.env
 client/.env.*
 !client/.env.example
 
-# Server
-server/bin/
-server/obj/
-server/out/
-server/wwwroot/
+# Server (Python / FastAPI)
+server/.venv/
+server/venv/
+server/__pycache__/
+server/**/__pycache__/
+server/*.py[cod]
+server/.pytest_cache/
+server/.mypy_cache/
+server/.ruff_cache/
+server/.coverage
+server/htmlcov/
 
-# Visual Studio / Rider
-server/.vs/
-server/.idea/
-server/**/*.user
-server/**/*.suo
+# Python packaging
+server/build/
+server/dist/
+server/*.egg-info/
 
-# .NET generated
-server/**/*.cache
-server/**/*.log
-server/**/packages/
-server/**/*.nupkg
+# Environment variables / secrets
+server/.env
+server/.env.*
+!server/.env.example
 
-# Secrets
-server/**/appsettings.Development.json
-server/**/secrets.json
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Editor
-.vscode/
+# Temporary files
+*.tmp
+*.bak
+/server/Properties
+/server/Properties
+/server/Properties/launchSettings.json
