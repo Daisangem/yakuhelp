@@ -28,7 +28,7 @@ server/**/packages/
 server/**/*.nupkg
 
 # Web root (only if entirely generated)
-wwwroot/
+server/wwwroot/
 
 # Environment / secrets
 server/**/appsettings.Development.json

@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "concurrently -k -n CLIENT,SERVER -c blue,green \"vite\" \"dotnet watch run --project ../server\"",
+    "dev:client": "vite",
+    "dev:server": "dotnet watch run --project ../server",
+    "build": "tsc && vite build && dotnet build ../server",
+    "build:client": "tsc && vite build",
+    "build:server": "dotnet build ../server",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.5",
+    "concurrently": "^10.0.7",
     "tailwindcss": "^4.3.5",
     "typescript": "~7.0.2",
     "vite": "^8.3.6"
